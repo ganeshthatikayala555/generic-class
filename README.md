@@ -8,3 +8,5 @@ when we need to work with diff datatypes we can take generic classes
 which has advantages:--1)code reusability:->we neednt create seprte classes for seperate data types ,
 the same code can work with diff datatypes
 2)typesafety
+without generics, you lose the flexibility of using the same class with different data types.
+Each variation of data types would require a separate class 
