@@ -1,0 +1,51 @@
+here we want a store pair of values(unknown datatypes)...
+so we create seperate classes for each of them
+
+
+// Class for storing a pair of Strings
+class StringPair {
+    private String first;
+    private String second;
+
+    public StringPair(String first, String second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public String getFirst() {
+        return first;
+    }
+
+    public String getSecond() {
+        return second;
+    }
+}
+
+// Class for storing a pair of Integers
+class IntegerPair {
+    private int first;
+    private int second;
+
+    public IntegerPair(int first, int second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public int getFirst() {
+        return first;
+    }
+
+    public int getSecond() {
+        return second;
+    }
+}
+
+public class PairExample {
+    public static void main(String[] args) {
+        StringPair stringPair = new StringPair("Hello", "World");
+        IntegerPair integerPair = new IntegerPair(42, 123);
+
+        System.out.println("String Pair: " + stringPair.getFirst() + ", " + stringPair.getSecond());
+        System.out.println("Integer Pair: " + integerPair.getFirst() + ", " + integerPair.getSecond());
+    }
+}
