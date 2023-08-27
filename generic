@@ -1,0 +1,26 @@
+public class Hello<T, V> {
+    private T name;
+    private V age;
+
+    public Hello(T name, V age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public T getName() {
+        return name;
+    }
+
+    public V getAge() {
+        return age;
+    }
+
+    public static void main(String[] args) {
+        Hello<String, Integer> h1 = new Hello<>("Parroy", 25);
+        String name = h1.getName();
+        int age = h1.getAge();
+
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
