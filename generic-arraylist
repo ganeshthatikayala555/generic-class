@@ -1,0 +1,12 @@
+import java.util.*;
+public class HelloWorld{
+     
+     public static void main(String []args){
+         ArrayList <String> mylist=new ArrayList<>();
+         mylist.add("kiran");
+         mylist.add("ganesh");
+         for(String s:mylist){
+              System.out.println(s);
+         }
+     }
+}
